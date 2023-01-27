@@ -22,15 +22,15 @@
 
 
 header{
-    border: 2px solid red;
+    border: 1px solid #00BF8F30;
     width: 100%;
-    height: 200px;
+    height: 130px;
 }
 
 #text-top{
     background-color: #FAAB43;
     width: 100%;
-    height: 70px;
+    height: 65px;
     font-weight: 400;
     font-size: 1.2rem;
     color: #ffffff;
@@ -58,6 +58,92 @@ header{
     font-weight: 600;
 }
 
-#menu{
+nav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 
 }
+
+nav #menu{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+nav #menu svg{
+    width: 72px;
+    margin: 10px 30px 0px 20px;
+}
+
+nav #menu a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #505050;
+    display: flex;
+    align-items: center;
+}
+
+nav #account{
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px;
+}
+
+nav #account svg{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 10px;
+    /* border: 1px solid red; */
+}
+
+nav #account a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #00BF8F;
+    /* border: 1px solid red; */
+    align-items: center;
+    display: flex;
+}
+
+nav #account a:nth-child(2){
+    margin-right: 30px;
+}
+
+nav #account a:nth-child(4){
+    color: #474747;
+}
+
+nav #account a:nth-child(1)::before{
+    content: url(./images/top/become.svg);
+    /* border: 1px solid brown; */
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+nav #account a:nth-child(3)::before{
+    content: url(./images/top/account.svg);
+    /* border: 1px solid brown; */
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+a.seta::after,
+a.seta::after{
+    content: url(./images/top/seta.svg);
+    margin-left: 10px;
+    height: 15px;
+    width: 15px;
+    /* border: 1px solid black; */
+}
+
+
+/* FIM TOPO */
