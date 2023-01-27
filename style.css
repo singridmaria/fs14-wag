@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli'),
+        url('https://assets.wagwalkingweb.com/fonts/muli-v16-latin-regular.woff2') format('woff2'),
+        url('https://assets.wagwalkingweb.com/fonts/muli-v16-latin-regular.woff') format('woff');
+    font-display: optional;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Muli, Helvetica, Arial, sans-serif;
+}
+
+/* FIM PROPRIEDADES GERAIS */
+
+
+/* INICIO DO TOPO E SERVICOS --  HANS */
+
+
+header{
+    border: 2px solid red;
+    width: 100%;
+    height: 300px;
+}
+
+#text-top{
+
+}
+
+#menu{
+
+}
