@@ -22,9 +22,11 @@
 
 
 header{
-    border: 1px solid #00BF8F30;
     width: 100%;
     height: 130px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 #text-top{
@@ -59,6 +61,7 @@ header{
 }
 
 nav{
+    background-color: #fff;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -145,5 +148,118 @@ a.seta::after{
     /* border: 1px solid black; */
 }
 
-
 /* FIM TOPO */
+
+/* INICIO SERVICOS */
+
+main #picture_head{
+    position: initial;
+    width: 100%;
+    height: 500px;
+    padding: 70px 160px 0px 160px;
+    background-image: url(./images/top/background-top.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 130px;
+    position: relative;
+
+}
+
+main #picture_head h1{  
+    color: #fff;
+    font-size: 5rem;
+}
+
+main #picture_head h3{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.content_head{
+    width: 1400px;
+    position: relative;
+    /* border: 3px solid rgb(245, 252, 244); */
+    margin: 0 auto;
+    height: 100%;
+    padding: 0px 150px;
+}
+
+#box-icons{
+    min-width: 1100px;
+    height: 160px;
+    /* border: 3px solid rgb(29, 245, 21); */
+    position: absolute;
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+    bottom: 0;
+    margin:0 auto;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+
+.icons:nth-child(1){
+    border-bottom: 5px solid #00bf8f;
+}
+
+.icons img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.icons a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00BF8F;
+}
+
+#bottom_services{
+    height: 200px;
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 2px 2px 15px #00000020;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#bottom_services .text-services{
+    width: 65%;
+    font-size: 1.5rem;
+    padding: 20px 5px 0px 30px;
+    color: #727272;
+}
+
+#bottom_services .text-services span{
+    color:#00bf8f;
+    font-weight: bold;
+}
+
+#bottom_services .button-services{
+    width: 35%;
+    padding: 20px 0px;
+}
+
+#bottom_services .button-services button{
+    outline: none;
+    border: 0;
+    width: 370px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00bf8f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+/* FIM SERVICOS */
