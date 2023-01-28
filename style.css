@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Muli, Helvetica, Arial, sans-serif;
+    outline: 2px solid red;
 }
 
 /* FIM PROPRIEDADES GERAIS */
@@ -20,3 +21,23 @@
 
 /* INICIO DO ANIMAL LOVERS WANTED --  MIQUÉIAS */
 
+#img4{
+    margin-top: 70px;
+}
+
+h3{
+    font-size: 48px;
+    margin-top: 0;
+    color: rgb(0, 191, 143);
+    -webkit-font-smoothing: antialiased;
+    box-sizing: content-box;
+    text-indent: 0px;
+    text-transform: none;
+    font-style: normal;
+    white-space: normal;
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 32px;
+    text-align: right;
+    
+}
