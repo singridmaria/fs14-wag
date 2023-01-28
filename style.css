@@ -13,7 +13,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Muli, Helvetica, Arial, sans-serif;
-    outline: 2px solid red;
 }
 
 /* FIM PROPRIEDADES GERAIS */
@@ -21,9 +20,45 @@
 
 /* INICIO DO ANIMAL LOVERS WANTED --  MIQUÉIAS */
 
-#img4{
-    margin-top: 70px;
+
+#imgprincipal{
+    margin-top: 150px;
+    background-image: url('imagens2/img4.jpg');
+    background-size: cover;
+    min-height: 504px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    box-sizing: border-box;
 }
+
+
+#imgprincipal .imgtext1{
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: flex-end;
+    align-items: normal;
+    -webkit-box-pack: end;
+    visibility: visible;
+    box-sizing: content-box;
+    transform: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+#imgprincipal .imgtext1 .imgtext2{
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 744px;
+    padding-top: 116px;
+    padding-bottom: 116px;
+    padding-right: 160px;
+}
+
 
 h3{
     font-size: 48px;
@@ -38,6 +73,115 @@ h3{
     opacity: 1;
     visibility: visible;
     margin-bottom: 32px;
+    text-align: right;  
+}
+
+
+p{
+    font-size: 18px;
+    line-height: 24px;
     text-align: right;
-    
+    margin-bottom: 32px;
+    margin-left: auto;
+    width: 400px;
+    margin-top: 0px;
+    color: rgb(114, 114, 114);
+    -webkit-font-smoothing: antialiased;
+    box-sizing: content-box;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    text-indent: 0px;
+    text-transform: none;
+    font-style: normal;
+    white-space: normal;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#imgprincipal .imgtext1 .imgtext2 .divtaga{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: center;
+    align-items: normal;
+    flex-shrink: 1;
+    visibility: visible;
+    box-sizing: border-box;
+    transform: none;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+
+a{
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: normal;
+    min-width: 64px;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    min-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(0, 191, 143);
+    border: none;
+    border-top-width: initial;
+    border-right-width: initial;
+    border-bottom-width: initial;
+    border-left-width: initial;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 360px;
+}
+
+
+span{
+    color: inherit;
+    cursor: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: normal;
+    align-items: normal;
+    font-family: inherit;
+    line-height: inherit;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    box-sizing: content-box;
+    text-indent: 0px;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    text-transform: none;
+    font-style: normal;
+    white-space: normal;
+    opacity: 1;
+    visibility: visible;
+    font-size: 21px;
 }
