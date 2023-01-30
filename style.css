@@ -383,7 +383,6 @@ main #picture_head .icons a{
 
 main #picture_head a.link-active{
     color: #0cc194;
-    width: 50%;
     text-align: center;
     border-bottom: 4px solid #00bf8f;
 }
