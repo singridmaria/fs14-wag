@@ -95,3 +95,59 @@ divAcc.addEventListener("mouseover", function () {
 divAcc.addEventListener("mouseout", function () {
     divAcc.classList.remove("exibe");
 });
+
+
+// BOTOES SERVICOS
+
+var divServices = document.querySelector(".box_services");
+
+var arrayServices = document.querySelectorAll(".link-icons"); //link
+
+    // console.log(arrayServices);
+
+    arrayServices.forEach(link => {
+   
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            
+            divServ = link.textContent;  // pega somente o conteúdo em texto
+            divServ = divServ.toLowerCase();  // converte o texto para minustulo
+            var nomeServ = divServ.replace(/([^\w]+|\s+)/g, '-'); //remove caracteres especiais e espaços
+                     
+            var arrayDiv = document.querySelectorAll("." + nomeServ);
+
+            // console.log(nomeServ);
+
+            if(nomeServ == "Walk"){
+
+                document.querySelector(".walkdefaul1").classList.remove("oculta");
+                document.querySelector(".walkdefaul2").classList.remove("oculta");        
+    
+            }else{
+                
+                arrayServices.forEach(linkClass => {           // Borda nos links services
+                    linkClass.classList.remove("link-active"); // Borda nos links services
+                })
+                    link.classList.add("link-active");         // Borda nos links services
+
+
+            var boxOcu = document.querySelectorAll(".boxOculto");
+            boxOcu.forEach(boxOculto => {
+
+                boxOculto.classList.add("oculta");
+
+                // console.log(boxOculto);
+            })
+            
+            arrayDiv.forEach(divClass => {    
+                
+                divClass.classList.remove("oculta");
+
+                });               
+                
+            }
+
+         });
+     
+    });
+

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wag! | Find Best Local Dog Walkers, Boarders, and Trainers</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/top/png/faviconV2.png" type="image/x-icon">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -19,29 +21,87 @@
         </div>
         <nav>
             <div id="menu">
+
                 <a href="">
                     <img src="./images/top/logo.svg" />
                 </a>
-                <a href="" class="seta">Services</a>
-                <a href="" class="seta">Health & Wellness</a>
+                <a href="" id="btn-services" class="seta">Services</a>
+                <a href="" id="btn-health" class="seta">Health & Wellness</a>
                 <a href="">Resources</a>
                 <a href="">Help Center & Safety</a>
 
             </div>
             <div id="account">
-                <a href="">
-                </a>
-                <a href="" class="seta">
+
+                <span><img src="./images/top/become.svg" /></span>
+                <a href="" id="btn-become" class="seta">
                     Become a Caregiver
                 </a>
-
-                <a href="">
-                </a>
-                <a href="" class="seta">
+                <span><img src="./images/top/account.svg" /></span>
+                <a href="" id="btn-account" class="seta">
                     My account
                 </a>
             </div>
+            <div id="drop-become" class="drop-become">
+                <a href="">Become a Waker</a>
+                <a href="">Become a Sitter</a>
+            </div>
+            <div id="drop-account" class="drop-account">
+                <a href="">Sing in</a>
+                <a href="">Sing up</a>
+            </div>
         </nav>
+        <div class="menu-hover" id="div-btn-services">
+            <div class="hover-ico">
+                <img src="./images/top/png/Wag! Walk service.png" alt="">
+                <h3>Walking</h3>
+                <h4>Get their steps in</h4>
+            </div>
+            <div class="hover-ico">
+                <img src="./images/top/png/svgexport-4.png" alt="">
+                <h3>Drop-ins</h3>
+                <h4>Brief home visit</h4>
+            </div>
+            <div class="hover-ico">
+                <img src="./images/top/png/Wag! Sitting service.png" alt="">
+                <h3>Sitting</h3>
+                <h4>In your home</h4>
+            </div>
+            <div class="hover-ico">
+                <img src="./images/top/png/Wag! Boarding service.png" alt="">
+                <h3>Boarding</h3>
+                <h4>In Caregiver's home</h4>
+            </div>
+            <div class="hover-ico">
+                <img src="./images/top/png/Training-icon.png" alt="">
+                <h3>Training</h3>
+                <h4>1-on-1 sessions</h4>
+            </div>
+            <div class="hover-ico">
+                <img src="./images/top/png/Wag! Premium service.png" alt="">
+                <h3>Wag! Premium</h3>
+                <h4>Save 10%+</h4>
+            </div>
+        </div>
+        <div class="menu-hover" id="div-btn-health">
+            <div class="hover-ico">
+                <img src="./images/top/png/Wag! Wellness service.png" alt="">
+                <h3>Pet Insurance</h3>
+            </div>
+            <div class="hover-ico">
+                <img src="./images/top/png/svgexport-10.png" alt="">
+                <h3>Wag! Wellness Plans</h3>
+            </div>
+            <div class="hover-ico">
+                <img src="./images/top/png/svgexport-11.png" alt="">
+                <h3>Vet Chat</h3>
+            </div>
+            <div class="hover-ico">
+                <img src="./images/top/png/Wag! Premium service.png" alt="">
+                <h3>Wag! Premium</h3>
+                <h4>Save 10%+</h4>
+            </div>
+        </div>
     </header>
     <main>
         <div id="picture_head">
@@ -53,36 +113,81 @@
                 <div id="box-icons">
                     <div class="icons">
                         <img src="./images/top/icon-wag-walk.svg" />
-                        <a href="">Walk</a>
+                        <a href="" class="link-icons">Walk</a>
                     </div>
                     <div class="icons">
                         <img src="./images/top/icon-nitgh-cloud.svg" />
-                        <a href="">Overnight</a>
+                        <a href="" class="link-icons">Overnight</a>
                     </div>
                     <div class="icons">
                         <img src="./images/top/icon-ball.svg" />
-                        <a href="">Drop-in</a>
+                        <a href="" class="link-icons">Drop-in</a>
                     </div>
                     <div class="icons">
                         <img src="./images/top/icon-shiled.svg" />
-                        <a href="">Wag! Wellness</a>
+                        <a href="" class="link-icons">Wag! Wellness</a>
                     </div>
                     <div class="icons">
                         <img src="./images/top/apito.svg" />
-                        <a href="">Training</a>
+                        <a href="" class="link-icons">Training</a>
                     </div>
                 </div>
             </div>
-            <div id="bottom_services">
-                <div class="text-services">
-                    Choose between a 20-minute, 30-minute, or 60-minute stroll for your dog. On-demand or pre-scheduled.
-                    <span>Learn more about dog walking</span>
-                </div>
-                <div class="button-services">
-                    <a href=""><button>Book a walk</button></a>
-                </div>
+        </div>
+        <div id="services">
+        <div class="box_services">
+            <div class="text-services walk walkdefaul1 boxOculto">
+                Choose between a 20-minute, 30-minute, or 60-minute stroll for your dog. On-demand or pre-scheduled.
+                <span>Learn more about dog walking</span>
+            </div>
+            <div class="button-services walk walkdefaul2 boxOculto">
+                <a href=""><button>Book a walk</button></a>
             </div>
         </div>
+ 
+        <div class="box_services">
+            <div class="text-services overnight boxOculto oculta">
+                A sleepover for your pet in the comfort of your home or a Pet Caregiver’s home, for as many nights
+                as you need. Learn more about
+                <span>pet sitting</span> or <span>boarding</span>
+            </div>
+            <div class="button-services overnight boxOculto oculta">
+                <a href=""><button>Book sitting</button></a>
+                <a href=""><button>Book boarding</button></a>
+            </div>
+        </div>
+
+        <div class="box_services">
+            <div class="text-services drop-in boxOculto oculta">
+                A 20 minute home visit for pets who don’t need a walk, but love having friends over. 
+               <span>Learn more about drop-in pet care</span>
+            </div>
+            <div class="button-services drop-in boxOculto oculta">
+                <a href=""><button>Book Drop-in</button></a>
+            </div>
+        </div>
+
+        <div class="box_services">
+            <div class="text-services wag-wellness boxOculto oculta">
+                Don’t choose between your pet and your wallet. Wag! Wellness helps you provide the best care for your pet at the best price. Compare pet insurance and wellness plans from top-rated providers, or connect with licensed vets for expert advice. 
+                <span>Compare Pet Insurance Plans</span>
+            </div>
+            <div class="button-services wag-wellness boxOculto oculta">
+                <a href=""><button>Insurance options</button></a>
+                <a href=""><button>Wag! Wellness</button></a>
+            </div>
+        </div>
+
+        <div class="box_services">
+            <div class="text-services training boxOculto oculta">
+                For dogs and cats of all ages and experience levels - work one-on-one with an experienced pet trainer from the comfort of your home, or over video chat! 
+                <span>Learn more about dog training</span>
+            </div>
+            <div class="button-services training boxOculto oculta">
+                <a href=""><button>Book Training</button></a>
+            </div>
+        </div>
+    </div>
 
 
     </main>

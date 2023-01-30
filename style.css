@@ -8,7 +8,7 @@
     font-display: optional;
   }
 
-*{
+*, *::after, *::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,20 +58,24 @@ header{
     font-weight: 600;
 }
 
+/* FIM TEXTO DA BARRA NO TOPO */
+
+/* INICIO BARRA MENU */
+
 nav{
     background-color: #fff;
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    /* border-bottom: 2px solid #00BF8F30; */
 }
 
 nav #menu{
     height: 55px;
-    /* border: 3px solid rgb(245, 252, 244);  */
+    /* border: 3px solid rgb(30, 194, 9);  */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
 }
 
 nav #menu img{
@@ -86,6 +90,26 @@ nav #menu a{
     color: #505050;
     display: flex;
     align-items: center;
+    position: relative;
+    padding: 0px 20px; 
+}
+
+nav #menu a:nth-child(1){
+    padding-left: 5px;
+}
+
+nav #menu a:nth-child(n + 2)::before{
+    content: '';
+    width: 0;
+    height: 60px;
+    position: absolute;
+    border-bottom: 3px solid #00bf8f;
+    transition: 0.3s ease-out;
+}
+
+nav #menu a:hover:nth-child(n + 2)::before{
+    content: '';
+    width: 70%;
 }
 
 nav #account{
@@ -96,11 +120,9 @@ nav #account{
     padding-right: 60px;
 }
 
-nav #account svg{
-    width: 20px;
-    height: 20px;
-    margin: 0px 10px 0px 10px;
-    /* border: 1px solid red; */
+nav #account::after{
+    content: '';
+    float: left;  
 }
 
 nav #account a{
@@ -108,9 +130,23 @@ nav #account a{
     text-decoration: none;
     font-weight: 500;
     color: #00BF8F;
-    /* border: 1px solid red; */
     align-items: center;
     display: flex;
+    position: relative;
+}
+
+nav #account a::before{
+    content: '';
+    width: 0;
+    height: 60px;
+    position: absolute;
+    border-bottom: 3px solid #00bf8f;
+    transition: 0.3s ease-out;
+}
+
+nav #account a:hover::before{
+    content: '';
+    width: 100%;
 }
 
 nav #account a:nth-child(2){
@@ -121,26 +157,131 @@ nav #account a:nth-child(4){
     color: #474747;
 }
 
-nav #account a:nth-child(1)::before{
-    content: url(./images/top/become.svg);
-    /* border: 1px solid brown; */
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
+nav #account span{
+    margin-right: 5px;
+    height: 24px;
+    padding: 0;
+}
+        /* MENU DROP LADO DIREITO */
+.drop-account{
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top: 110px;
+    visibility: hidden;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
 }
 
-nav #account a:nth-child(3)::before{
-    content: url(./images/top/account.svg);
-    /* border: 1px solid brown; */
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
+.drop-become{
+    width: 200px;
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    width: 220px;
+    right: 200px;
+    top: 110px;
 }
- 
+
+nav .drop-become a,
+nav .drop-account a{
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    padding: 15px 0px 15px 35px;
+    /* border: 1px solid blue; */
+}
+
+nav .drop-become a::before,
+nav .drop-account a::before{
+    content: '';
+    border-bottom: 2px solid #03e9b024;
+    width: 130px;
+    height: 38px;
+    position: absolute;
+}
+
+nav .drop-become a:hover,
+nav .drop-account a:hover{
+    background-color: #00BF8F;
+    color: #fff;
+}
+
+nav .drop-become a:nth-child(2):hover,
+nav .drop-account a:nth-child(2):hover{
+    border-radius: 0px 0px 10px 10px;
+}
+
+        /* FIM DO MENU DROP LADO DIREITO */
+
+        /* SETAS AO LADO DOS LINKS DO MENU  */
+
 a.seta::after,
 a.seta::after{
     content: url(./images/top/Chevron\ down\ icon.png);
     margin-left: 6px;
+}
+         /* FIM SETAS AO LADO DOS LINKS DO MENU  */
+
+      
+         /* MENU DROP LADO ESQUERDO  */
+
+.menu-hover{
+    width: 100%;
+    height: 155px;
+    background-color: #fff;
+    float: left;
+    border-top: 2px solid #00BF8F30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    visibility: hidden;
+    display: none;
+}
+
+.menu-hover .hover-ico{
+    /* border: 1px solid #474747; */
+    width: 155px;
+    height: 130px;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-hover .hover-ico img{
+    width: 64px;
+}
+
+.menu-hover .hover-ico:last-child{
+    background-color: #f6e7a2;
+}
+
+.menu-hover .hover-ico h3{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.menu-hover .hover-ico h4{
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+         /* FIM MENU DROP LADO ESQUERDO  */
+
+.exibe{
+    display: flex;
+    visibility: visible;
+}
+
+.oculta{
+    visibility: hidden;
+    display: none;
 }
 
 /* FIM TOPO */ 
@@ -191,7 +332,7 @@ main #picture_head .content_head .text-head{
 
 main #picture_head #box-icons{
     min-width: 1100px;
-    height: 160px;
+    height: 155px;
     /* border: 3px solid rgb(29, 245, 21); */
     position: absolute;
     display: flex;
@@ -211,7 +352,7 @@ main #picture_head .icons{
     /* border: 1px solid #00BF8F; */
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 15px 5px 0px 5px;
     background-color: #F2F2F2;
 }
 
@@ -230,47 +371,59 @@ main #picture_head .icons img{
 
 main #picture_head .icons a{
     text-decoration: none;
-    font-size: 1.2rem;
+    height: 47px;
+    padding-bottom: 8px;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: #00BF8F;
+    color: #727272;
+    /* border: 2px solid rgb(248, 10, 10); */
+    
+    transition: 0.2s ease-out;
 }
 
-main #picture_head .icons:nth-child(1)::after{
-    content: '';
-    width: 12%;
-    position: absolute;
-    bottom: 0;
+main #picture_head a.link-active{
+    color: #0cc194;
+    width: 50%;
+    text-align: center;
     border-bottom: 4px solid #00bf8f;
 }
 
-main #bottom_services{
+main #services{
     height: 200px;
     width: 1100px;
     margin: 0 auto;
     display: flex;
-    box-shadow: 2px 2px 15px #00000020;
-    border-radius: 0px 0px 15px 15px;
+    box-shadow: 3px 3px 18px #00000030;
+    border-radius: 0px 0px 10px 10px;
 }
 
-#bottom_services .text-services{
-    width: 65%;
+#services .box_services{
+    /* border: 2px solid rgb(248, 10, 10); */
+    display: flex;
+    width: 1100px;
+}
+
+#services .text-services{
+    width: 715px;
     font-size: 1.2rem;
-    padding: 30px 15px 0px 50px;
+    padding: 30px 35px 0px 50px;
     color: #727272;
     line-height: 30px;
+    /* border: 2px solid rgb(70, 127, 250); */
 }
 
-#bottom_services .text-services span{
+#services .text-services span{
     color:#00bf8f;
     font-weight: bold;
 }
 
-#bottom_services .button-services{
-    width: 35%;
+#services .button-services{
+    width: 385px;
     padding: 20px 0px;
+    /* border: 2px solid rgb(107, 76, 76); */
 }
 
-#bottom_services .button-services button{
+#services .button-services button{
     outline: none;
     border: 0;
     width: 330px;
@@ -280,5 +433,6 @@ main #bottom_services{
     color: #fff;
     font-weight: bold;
     font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 /* FIM SERVICOS */
