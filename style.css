@@ -157,6 +157,11 @@ a{
 }
 
 
+a:hover{
+    opacity: 0.8;
+}
+
+
 span{
     color: inherit;
     cursor: inherit;
