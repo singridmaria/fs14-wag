@@ -20,7 +20,6 @@
 
 /* INICIO DO TOPO E SERVICOS --  HANS */
 
-
 header{
     width: 100%;
     height: 100px;
@@ -32,6 +31,7 @@ header{
 #text-top{
     background-color: #FAAB43;
     width: 100%;
+    cursor: pointer;
     height: 55px;
     font-weight: 400;
     font-size: 1rem;
@@ -67,12 +67,10 @@ nav{
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    /* border-bottom: 2px solid #00BF8F30; */
 }
 
 nav #menu{
     height: 55px;
-    /* border: 3px solid rgb(30, 194, 9);  */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,6 +192,7 @@ nav .drop-account a{
     font-size: 1rem;
     display: flex;
     padding: 15px 0px 15px 35px;
+    color: #474747;
     /* border: 1px solid blue; */
 }
 
@@ -227,8 +226,7 @@ a.seta::after{
     margin-left: 6px;
 }
          /* FIM SETAS AO LADO DOS LINKS DO MENU  */
-
-      
+   
          /* MENU DROP LADO ESQUERDO  */
 
 .menu-hover{
@@ -246,7 +244,6 @@ a.seta::after{
 }
 
 .menu-hover .hover-ico{
-    /* border: 1px solid #474747; */
     width: 155px;
     height: 130px;
     text-align: center;
@@ -271,6 +268,7 @@ a.seta::after{
 .menu-hover .hover-ico h4{
     font-weight: 100;
     font-size: 0.9rem;
+    color: #0cc194;
 }
          /* FIM MENU DROP LADO ESQUERDO  */
 
@@ -315,7 +313,6 @@ main #picture_head h3{
 main #picture_head .content_head{
     max-width: 1580px;
     position: relative;
-    /* border: 3px solid rgb(245, 252, 244); */
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -325,7 +322,6 @@ main #picture_head .content_head{
 main #picture_head .content_head .text-head{
     text-align: left;
     justify-content: left;
-    /* border: 3px solid rgb(233, 255, 33); */
     width: 100%;
     padding-top: 50px
 }
@@ -333,7 +329,6 @@ main #picture_head .content_head .text-head{
 main #picture_head #box-icons{
     min-width: 1100px;
     height: 155px;
-    /* border: 3px solid rgb(29, 245, 21); */
     position: absolute;
     display: flex;
     border-radius: 10px 10px 0px 0px;
@@ -349,7 +344,6 @@ main #picture_head .icons{
     flex-direction: column;
     flex: 1;
     gap: 10px;
-    /* border: 1px solid #00BF8F; */
     align-items: center;
     justify-content: center;
     padding: 15px 5px 0px 5px;
@@ -376,13 +370,12 @@ main #picture_head .icons a{
     font-size: 1.1rem;
     font-weight: 600;
     color: #727272;
-    /* border: 2px solid rgb(248, 10, 10); */
-    
     transition: 0.2s ease-out;
 }
 
 main #picture_head a.link-active{
     color: #0cc194;
+    width: 130px;
     text-align: center;
     border-bottom: 4px solid #00bf8f;
 }
@@ -397,7 +390,6 @@ main #services{
 }
 
 #services .box_services{
-    /* border: 2px solid rgb(248, 10, 10); */
     display: flex;
     width: 1100px;
 }
@@ -408,18 +400,21 @@ main #services{
     padding: 30px 35px 0px 50px;
     color: #727272;
     line-height: 30px;
-    /* border: 2px solid rgb(70, 127, 250); */
 }
 
-#services .text-services span{
+#services .text-services a{
     color:#00bf8f;
     font-weight: bold;
+    text-decoration: none;
+}
+
+#services .text-services a:hover{
+    opacity: 0.8;
 }
 
 #services .button-services{
     width: 385px;
     padding: 20px 0px;
-    /* border: 2px solid rgb(107, 76, 76); */
 }
 
 #services .button-services button{
@@ -434,4 +429,10 @@ main #services{
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
+
+#services .button-services button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 /* FIM SERVICOS */

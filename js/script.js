@@ -116,8 +116,6 @@ var arrayServices = document.querySelectorAll(".link-icons"); //link
                      
             var arrayDiv = document.querySelectorAll("." + nomeServ);
 
-            // console.log(nomeServ);
-
             if(nomeServ == "Walk"){
 
                 document.querySelector(".walkdefaul1").classList.remove("oculta");
@@ -143,11 +141,8 @@ var arrayServices = document.querySelectorAll(".link-icons"); //link
                 
                 divClass.classList.remove("oculta");
 
-                });               
-                
+                });                           
             }
-
-         });
-     
+         });     
     });
 
