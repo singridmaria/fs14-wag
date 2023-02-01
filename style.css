@@ -435,3 +435,76 @@ main #services{
     margin-bottom: 10px;
 }
 /* FIM SERVICOS */
+
+/* INÍCIO LOCALIZAÇÃO */
+.localizacao1 {
+    display: flex;
+    padding: 60px 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.localizacao1 h2 {
+    font-size: 30px;
+    margin: 0px;
+    color: rgb(114, 114, 114);
+}
+
+.localizacao2 {
+    margin-top: 20px;
+    
+}
+
+.localizacao3 {
+    font-family: "Helvetica Neue Regular", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.localizacao4 {
+    display: flex;
+    text-align: center;
+
+}
+
+.localizacao4 a {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+
+}
+
+.localizacao4 {
+    color: rgb(114, 114, 114);
+}
+/* FIM LOCALIZAÇÃO */
+
+/* INÍCIO LOCALIZAÇÃO CUIDADOR */
+.loccuidador1{
+    display: flex;
+    padding: 60px 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loccuidador1 h2, h3{
+    font-family: Muli, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    margin: 0px;
+    color: rgb(114, 114, 114);
+}
+
+.loccuidador2 {
+    margin-top: 20px;
+}
+
+.loccuidador3{
+    display: flex;
+    text-align: center;
+}
+
+.loccuidador3 a {
+    color: rgb(83, 83, 83);
+    font-family: Muli, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+
+}
+/* FIM LOCALIZAÇÃO */
