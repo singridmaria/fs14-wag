@@ -1,0 +1,191 @@
+
+section#doacao .top-doacao{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    background:url(Imagens/bg-doacao.svg);
+    background-color: #00BF8F;
+   
+    background-size: cover;
+    position: relative;
+    margin-top: -140px;
+    z-index: index -1;
+}
+
+section#doacao .bg-top{
+    background-image: url(Imagens/bg-doacao.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+   /*  border: 2px solid black; */
+        
+}
+
+section#doacao img{
+    margin-left: 220px;
+    width: 360px;
+    height: 250px;
+    margin-top: -10px;
+    position: relative;
+    z-index: index 1;
+}
+.doacao_texto{
+    color: #fff;
+    margin-left: -60px;
+    padding: 40px 190px 30px 90px;     
+    width: 900px;
+    height: 250px;
+    background-color: #00BF8F;
+    /* border: 1px solid blue; */
+}
+
+.doacao_texto h1{
+    font-size: 1.9rem;
+    font-weight: 600;
+    font-stretch: narrower;
+}
+
+.doacao_texto h2{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.doacao_texto p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.bg-bottom{
+    width: 100%;
+    /* border: 1px solid yellow; */
+    height: 280px;
+    margin-top: -100px;
+    background-image: url(Imagens/bg_bottom.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.atividades_texto{
+    text-align: center;
+    font-size: 2.0em;
+    color: rgb(114, 114, 114);
+}
+
+.atividades_texto h2{
+    font-size: 0.75em;
+    color: rgb(114, 114, 114);
+    margin-top: 20px;
+    margin-bottom: 30px;    
+}
+
+.atividades_links{
+    margin-left: 260px;
+    margin-right: 260px;
+    text-align: center;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1em;
+    column-gap: 10px;
+    /* border: 1px solid rgb(43, 168, 105); */
+       
+}
+
+.atividades_links :first-child{
+    border: 4px #0c0c0c ;
+    color: #fff;
+    width: 320px;
+    height: 200px;
+       display: flex;
+    background-image: url(Imagens/petresource-dog-health.jpg);
+    background-size:cover;
+    justify-content: center;
+    text-decoration: none;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    border-radius: 5%;
+}
+
+.atividades_links :nth-child(2){
+    color: #fff;
+    width: 320px;
+    height: 200px;
+       display: flex;
+    background-image: url(Imagens/petresource-dog-training.jpg);
+    background-size: cover;
+    justify-content: center;
+    text-decoration: none;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    border-radius: 5%;
+}
+
+.atividades_links :nth-child(3){
+    color: #fff;
+    width: 320px;
+    height: 200px;
+       display: flex;
+    background-image: url(Imagens/petresource-dog-grooming.jpg);
+    background-size: cover;
+    justify-content: center;
+    text-decoration: none;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    border-radius: 5%;
+}
+.atividades_links :nth-child(4){
+    color: #fff;
+    width: 320px;
+    height: 200px;
+       display: flex;
+    background-image: url(Imagens/petresource-dog-names.jpg);
+    background-size: cover;
+    justify-content: center;
+    text-decoration: none;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    border-radius: 5%;
+}
+
+.atividades_links :nth-child(5){
+    color: #fff;
+    width: 320px;
+    height: 200px;
+       display: flex;
+    background-image: url(Imagens/petresource-dog-activities.jpg);
+    background-size: cover;
+    justify-content: center;
+    text-decoration: none;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    border-radius: 5%;
+}
+
+
+.atividades_links :nth-child(6){
+    color: #fff;
+    width: 320px;
+    height:200px;
+       display: flex;
+    background-image: url(Imagens/petresource-dog-behavior.jpg);
+    background-size: cover;
+    justify-content: center;
+    text-decoration: none;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    border-radius: 5%;
+}
+
+
+.fim {
+    margin-top: 500px;
+}

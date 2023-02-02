@@ -436,3 +436,156 @@ main #services{
 }
 
 /* FIM SERVICOS */
+
+ /* WHY WAG */
+
+#why-wag{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 80px;
+}
+
+#why-wag h1{
+    font-size: 48px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+#why-wag #content-why{
+    width: 800px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+ }
+
+#why-wag #content-why .box-pictures{
+    width: 130px;
+    /* border: 1px solid blue; */
+ }
+
+#why-wag #content-why .box-pictures img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+ 
+ #why-wag #content-why .box-divisorias{
+    /* border: 1px solid orange; */
+    width: 50px;
+    margin-left: 25px;
+    padding-top: 45px;
+
+}
+
+#why-wag #content-why .box-why-text{
+    color: #727272;
+    margin-left: 25px;
+    /* border: 1px solid blue; */
+    width: 450px;
+}
+
+#why-wag #content-why .box-why-text h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+#why-wag #content-why .box-why-text h4{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+#why-wag #content-why .box-why-text button{
+    padding: 10px 24px;
+    background-color: #00bf8f;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#why-wag #content-why .box-why-text button:hover{
+    background-color: #03d4a0;
+}
+
+
+/* INICIO REVIEWS */
+
+#reviews{
+    /* border: 1px solid red; */
+    margin-top: 30px;
+}
+
+#reviews .bg-onda-review{
+    /* border: 1px solid red; */
+    height: 136px;
+    background-image: url(images/section-two/ondas1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#reviews .content-reviews{
+    /* border: 1px solid red; */
+    text-align: center;
+    background-color: #EDEDED;
+    padding: 40px 150px 40px 150px;
+    height: 438px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+#reviews .title-reviews{
+    width: 100%;
+    font-size: 48px;
+    color: #727272;
+    text-align: center;
+    background-color: #EDEDED;
+    font-weight: 700;
+    padding: 20px 0px 50px 0px;
+}
+
+#reviews .content-reviews .box-reviews{
+    width: 300px;
+    height: 250px;
+    border-radius: 12px;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+}
+
+#reviews .content-reviews .box-reviews #img-dog{
+    width: 72px;
+    transform: translateY(-35px);
+}
+
+#reviews .content-reviews .box-reviews .stars{
+    margin-top: -20px;
+    color: #727272;
+}
+
+
+#reviews .content-reviews .box-reviews .stars img{
+    width: 18px;
+}
+
+#reviews .content-reviews .box-reviews p{
+    color: #727272;
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+#reviews .content-reviews .box-reviews h3{
+    font-size: 14px;
+    color: #727272;
+    font-weight: 700;
+}
